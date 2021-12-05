@@ -1,0 +1,48 @@
+plugin:
+  #If not accepting in those minutes they will get kicked
+  minutes-to-accept: 5
+  tos-menu:
+    name: '&6Terms Of Service (TOS)'
+    #For inventory's always follow this list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
+    inventory: 'BREWING'
+    accept-item:
+      name: '&aAccept TOS'
+      #For item names always follow this list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+      item: 'GREEN_DYE'
+    deny-item:
+      name: '&cDeny TOS'
+      #For item names always follow this list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+      item: 'RED_DYE'
+      #Message if the player gets kicked
+      message: '&cYou must accept the TOS to play on this server!'
+    tos-item:
+      name: '&6TOS:'
+      #For item names always follow this list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+      item: 'BOOK'
+      #Set text to pages!
+      #Use %n to start a new line, all color codes allowed!
+      tos:
+        - '&6Terms Of Service (TOS):%nUse this to create new lines'
+        - '&6You can add as many pages as you want'
+      buttons:
+        next:
+          name: '&aNext Page'
+          #For item names always follow this list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+          item: 'ARROW'
+        previous:
+          name: '&cPrevious Page'
+          #For item names always follow this list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+          item: 'ARROW'
+        page:
+          #%page% will be replaced with the actual page number
+          name: '&6TOS - Page %page%'
+          #For item names always follow this list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+          item: 'BOOK'
+        back:
+          name: '&aGo Back'
+          #For item names always follow this list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+          item: 'BLAZE_ROD'
+    discord-item:
+      name: '&9Discord: https://www.discord.gg/example'
+      #For item names always follow this list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+      item: 'PURPLE_DYE'
